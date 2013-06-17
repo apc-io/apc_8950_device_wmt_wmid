@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo wmid-eng
+add_lunch_combo wmid-userdebug
