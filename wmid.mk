@@ -18,7 +18,7 @@ $(call inherit-product, device/wmt/wmid/device.mk)
 #
 # Overrides
 #
-PRODUCT_NAME := wmid
+PRODUCT_NAME := full_wmid
 PRODUCT_DEVICE := wmid
 PRODUCT_BRAND := WonderMedia
 PRODUCT_MODEL := MID
