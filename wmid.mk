@@ -14,7 +14,8 @@
 
 $(call inherit-product, device/wmt/wmid/common.mk)
 $(call inherit-product, device/wmt/wmid/device.mk)
-
+# to have B2G install
+$(call inherit-product, build/target/product/full_base.mk)
 #
 # Overrides
 #
