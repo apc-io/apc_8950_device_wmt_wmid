@@ -22,7 +22,8 @@ endif
 
 PRODUCT_COPY_FILES := \
         $(LOCAL_KERNEL):kernel \
-        device/wmt/wmid/init.wmt.rc:root/init.wmt.rc
+        device/wmt/wmid/init.wmt.rc:root/init.wmt.rc \
+        device/wmt/wmid/init.rc:root/init.rc
 
 # Camera
 PRODUCT_COPY_FILES += \
