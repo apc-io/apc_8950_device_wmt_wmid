@@ -16,6 +16,7 @@ on early-init
     write /proc/1/oom_adj -16
 
     start ueventd
+    import /init.b2g.rc
 
 on init
 
@@ -293,6 +294,9 @@ on boot
     ifup lo
     hostname localhost
     domainname localdomain
+# set the default dns
+    setprop net.dns1 208.67.222.222
+    setprop net.dns2 208.67.220.220
 
 # set RLIMIT_NICE to allow priorities from 19 to -20
     setrlimit 13 40 40
@@ -621,9 +625,9 @@ service dhcpcd_wlan0 /system/bin/dhcpcd -ABKL
 #    class main
 #    disabled
 #    oneshot
-service dhcpcd_eth0 /system/bin/dhcpcd -ABKL
+service dhcpcd_eth0 /system/bin/dhcpcd -ABKL eth0
     class main
-    disabled
+#    disabled
     oneshot
 service set_static_ip /system/bin/sh /system/etc/wmt/script/run_staticip.sh
     class main
