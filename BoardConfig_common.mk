@@ -25,6 +25,9 @@ BUILD_WITH_ALSA_UTILS := true
 ALSA_DEFAULT_SAMPLE_RATE := 48000
 BOARD_HAVE_BLUETOOTH := true
 
+# init.rc
+TARGET_PROVIDES_INIT_RC := true
+
 # no hardware camera
 #USE_CAMERA_STUB := true
 
