@@ -17,6 +17,10 @@
 TARGET_IDC_DIR := system/etc/wmt/script
 LOCAL_IDC_DIR  := device/wmt/wmid/net/ethernet
 
+TARGET_VIA_DIR := system/etc/via/script
+
 PRODUCT_COPY_FILES += \
-	$(LOCAL_IDC_DIR)/run_staticip.sh:$(TARGET_IDC_DIR)/run_staticip.sh
+	$(LOCAL_IDC_DIR)/run_staticip.sh:$(TARGET_IDC_DIR)/run_staticip.sh \
+	$(LOCAL_IDC_DIR)/update_dns.sh:$(TARGET_VIA_DIR)/update_dns.sh
+
 
