@@ -720,7 +720,7 @@ service initrdscript /system/etc/rc.d/rcS.d/S06speedup
 
 service updatedns /bin/sh /system/etc/via/script/update_dns.sh
     class main
-    disable
+    disabled
 
 # import PC2TV script
 import /system/etc/wmtnd/wmtnd.rc
