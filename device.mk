@@ -23,7 +23,11 @@ endif
 PRODUCT_COPY_FILES := \
         $(LOCAL_KERNEL):kernel \
         device/wmt/wmid/init.wmt.rc:root/init.wmt.rc \
-        device/wmt/wmid/init.rc:root/init.rc
+        device/wmt/wmid/init.rc:root/init.rc 
+
+# support external storage
+PRODUCT_COPY_FILES += \
+	device/wmt/wmid/vold.fstab:system/etc/vold.fstab
 
 # Camera
 PRODUCT_COPY_FILES += \
