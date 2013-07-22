@@ -295,8 +295,8 @@ on boot
     hostname localhost
     domainname localdomain
 # set the default dns
-#    setprop net.dns1 208.67.222.222
-#    setprop net.dns2 208.67.220.220
+    setprop net.dns1 208.67.222.222
+    setprop net.dns2 208.67.220.220
 
 # set RLIMIT_NICE to allow priorities from 19 to -20
     setrlimit 13 40 40
@@ -720,7 +720,7 @@ service initrdscript /system/etc/rc.d/rcS.d/S06speedup
 
 service updatedns /bin/sh /system/etc/via/script/update_dns.sh
     class main
-    disabled
+#    disabled
 
 # import PC2TV script
 import /system/etc/wmtnd/wmtnd.rc
