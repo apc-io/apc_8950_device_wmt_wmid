@@ -4,3 +4,7 @@
 persist.sys.usb.config=adb
 tv.product.model=hdmi
 persist.sys.timezone=Asia/Taipei
+
+# 0 mean no orientation sensor, 1: the sensor is available
+hw.sensor.orientation.avail=0
+
