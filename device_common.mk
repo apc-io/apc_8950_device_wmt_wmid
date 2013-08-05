@@ -66,6 +66,7 @@ $(call inherit-product-if-exists, device/wmt/wmid/input/touchscreen/vt1609/Andro
 $(call inherit-product-if-exists, device/wmt/wmid/net/ethernet/ethernet.mk)
 $(call inherit-product-if-exists, device/wmt/wmid/inhouse/serial_tool/serialber_tool.mk)
 #$(call inherit-product-if-exists, device/wmt/wmid/ffmpeg/libavcodec/wmt/system/lib/wmt_codec.mk)
+$(call inherit-product-if-exists, device/wmt/wmid/cursor/cursor.mk)
 
 # Outside of wmt chip:
 $(call inherit-product-if-exists, vendor/wmt/wmid/device-vendor.mk)
