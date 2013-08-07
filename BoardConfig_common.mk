@@ -27,6 +27,7 @@ BOARD_HAVE_BLUETOOTH := true
 
 # init.rc
 TARGET_PROVIDES_INIT_RC := true
+TARGET_PROVIDES_B2G_INIT_RC := true
 
 # no hardware camera
 #USE_CAMERA_STUB := true
