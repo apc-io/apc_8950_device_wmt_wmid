@@ -51,3 +51,5 @@ WITH_DEXPREOPT := false
 # Wifi related defines
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# enable librecovery
+ENABLE_LIBRECOVERY := true

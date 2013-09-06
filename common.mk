@@ -51,7 +51,8 @@ PRODUCT_PACKAGES := \
     lights.goldfish \
     sensors.goldfish \
     OTAUpdate \
-    File_Browser
+    File_Browser \
+    librecovery
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
