@@ -18,6 +18,10 @@
 # un-tar files for OTA to build boot.img
 $(shell rm -rf out/target/product/wmid/root)
 $(shell mkdir -p out/target/product/wmid/root)
+
+# host tools
+$(shell mkdir -p out/host/linux-x86/framework)
+
 WMT_PACKAGES_BUSYBOX := $(shell find device/wmt/wmid/wmt_packages -name "busybox*.tgz")
 $(shell tar zxf $(WMT_PACKAGES_BUSYBOX) -C out/target/product/wmid/root)
 WMT_PACKAGES_MALI400 := $(shell find device/wmt/wmid/wmt_packages -name "mali400*.tgz")
@@ -28,3 +32,7 @@ WMT_PACKAGES_KERNEL_MODULES := $(shell find device/wmt/wmid/wmt_packages -name "
 $(shell tar zxf $(WMT_PACKAGES_KERNEL_MODULES) -C out/target/product/wmid/root)
 WMT_PACKAGES_WIFI_MODULES := $(shell find device/wmt/wmid/wmt_packages -name "wifi*modules*.tgz")
 $(shell tar zxf $(WMT_PACKAGES_WIFI_MODULES) -C out/target/product/wmid/root)
+
+# dumpkey.jar
+$(shell cp device/wmt/wmid/host/dumpkey.jar out/host/linux-x86/framework)
+
