@@ -8,4 +8,5 @@ PRODUCT_COPY_FILES := \
 	device/wmt/wmid/script/sdio_wifi_pwron.sh:system/etc/wmt/sdio_wifi_pwron.sh\
 	device/wmt/wmid/script/sdio_wifi_pwroff.sh:system/etc/wmt/sdio_wifi_pwroff.sh\
 	device/wmt/wmid/script/force.sh:system/etc/wmt/script/force.sh\
+	device/wmt/wmid/script/crontab.sh:system/etc/wmt/script/crontab.sh \
 	device/wmt/wmid/script/force.sh:system/etc/rc.d/rc0.d/S66lowmemorythreshold

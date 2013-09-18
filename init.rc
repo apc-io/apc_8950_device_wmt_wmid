@@ -722,5 +722,9 @@ service updatedns /bin/sh /system/etc/via/script/update_dns.sh
     class main
 #    disabled
 
+service crontab /system/bin/sh /system/etc/wmt/script/crontab.sh
+    class main
+    oneshot
+
 # import PC2TV script
 import /system/etc/wmtnd/wmtnd.rc
