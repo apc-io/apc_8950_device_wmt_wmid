@@ -626,9 +626,9 @@ service dhcpcd_wlan0 /system/bin/dhcpcd -ABKL
 #    class main
 #    disabled
 #    oneshot
-service dhcpcd_eth0 /system/bin/dhcpcd -ABKL eth0
+service dhcpcd_eth0 /system/bin/dhcpcd -ABKL
     class main
-#    disabled
+    disabled
     oneshot
 service set_static_ip /system/bin/sh /system/etc/wmt/script/run_staticip.sh
     class main
