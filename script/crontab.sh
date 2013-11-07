@@ -16,9 +16,11 @@
 #                                                                              #
 ################################################################################
 mount -o remount,rw -t yaffs2 `grep /system /proc/mounts | cut -d' ' -f1` /system
-echo "root:x:0:0::/root:/system/bin/sh" > /etc/passwd
-mkdir -p /etc/cron
-echo "* * * * * /usr/sbin/ntpd -d -N -q -p 64.250.177.145" > /etc/cron/root
+#echo "root:x:0:0::/root:/system/bin/sh" > /etc/passwd
+#mkdir -p /etc/cron
+#echo "* * * * * /usr/sbin/ntpd -d -N -q -p 64.250.177.145" > /etc/cron/root
+chown root /etc/passwd
+chown -R root /etc/cron
 mount -o remount,ro -t yaffs2 `grep /system /proc/mounts | cut -d' ' -f1` /system
 #mount -o remount,rw rootfs /
 #ln -s /system/bin/ /bin
