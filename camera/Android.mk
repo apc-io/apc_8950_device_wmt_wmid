@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_PRODUCT),wmid)
+ifeq ($(TARGET_PRODUCT),full_wmid)
 
 include $(CLEAR_VARS)
 
