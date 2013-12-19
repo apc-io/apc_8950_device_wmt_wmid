@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 	device/wmt/wmid/wifi/wifi_list:/system/etc/wmt/wifi_list \
 	device/wmt/wmid/wifi/broadcom/fw_bcmdhd.bin:/system/vendor/firmware/fw_bcmdhd.bin \
 	device/wmt/wmid/wifi/broadcom/bcmdhd.cal:/system/etc/wifi/bcmdhd.cal \
+	device/wmt/wmid/bluetooth/rtk8723a:/system/etc/firmware/rtk8723a \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0
