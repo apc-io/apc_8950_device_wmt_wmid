@@ -1,0 +1,2 @@
+# These settings are specific to running under the WMT hardware
+/dev/video*           0666   root     root

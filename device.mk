@@ -33,6 +33,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/wmt/wmid/camera/media_profiles.xml:system/etc/media_profiles.xml
 
+# Custom ueventd to config correct permission for /dev/video*
+PRODUCT_COPY_FILES += \
+       device/wmt/wmid/ueventd.wmt.rc:root/ueventd.wmt.rc
+
 PRODUCT_CHARACTERISTICS := tablet
 
 DEVICE_PACKAGE_OVERLAYS := \
