@@ -942,6 +942,8 @@ void CameraHardware::stopPreview()
 		//mPreviewStoppedCondition.wait(mPreviewLock);
         if (NO_ERROR != mPreviewStoppedCondition.waitRelative(mPreviewLock, timeout)) {
         	LOGE("\n Wait stopPreview Timeout!!!!!!!!!!!!!!");
+		LOGI("========We kill mediaserver from here===");
+		system("killall -9 mediaserver");
         }
    		mPreviewEnabled = false;
         mPreviewStop = false;
