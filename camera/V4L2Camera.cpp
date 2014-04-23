@@ -249,23 +249,25 @@ int V4L2Camera::Open(const char *device, int width, int height, int pixelformat)
 	hal_preview_width = width;
 	hal_preview_height = height;
 
-	if(width <= 320)
-    { //Patch for Fring.apk (240 * 160)
-       width = 320;
-       height = 240;
-    }
+	// ("Ok, WMT adjust preview size here but we'll disable this because they fixed it for some Android apk");
 
-	if(width > 640)
-    { //Patch for QRDroid.apk (800* 480)
-       width = 640;
-       height = 480;
-    }
+	// if(width <= 320)
+ //    { //Patch for Fring.apk (240 * 160)
+ //       width = 320;
+ //       height = 240;
+ //    }
 
-    if((width > 320) && (width < 640))
-    { //Patch for Qik.apk (352 * 288)
-       width = 320;
-       height = 240;
-    }
+	// if(width > 640)
+ //    { //Patch for QRDroid.apk (800* 480)
+ //       width = 640;
+ //       height = 480;
+ //    }
+
+ //    if((width > 320) && (width < 640))
+ //    { //Patch for Qik.apk (352 * 288)
+ //       width = 320;
+ //       height = 240;
+ //    }
 
 	ret = v4l2_ioctl_s_fmt(width, height, V4L2_PIX_FMT_YUYV);
 	if (ret < 0)
